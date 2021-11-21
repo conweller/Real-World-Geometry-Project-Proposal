@@ -1,6 +1,6 @@
-\documentclass[manuscript, nonacm]{acmart} 
+\documentclass[acmsmall, nonacm]{acmart} 
 \title{Real World Geometry} 
-\subtitle{Supplimental Geometry Instruction via an Augmented Reality Application} 
+\subtitle{Supplemental Geometry Instruction via an Augmented Reality Application} 
 \author{Tong Chu}
 \author{Connor Onweller}
 \author{Jie Ren}
@@ -38,13 +38,13 @@ In recent years, digital technology is employed in education since technology
 tools are very interesting and engaging for kids \cite{game-based,
 using-games-learning, game-based-learning, adaptive}. Augmented Reality (AR) is
 one of the most explored and successfully used technologies.  According to
-Piaget’s Constructivism theor \cite{psych-child}.  kids easily acquire new
+Piaget’s Constructivism theory \cite{psych-child}.  kids easily acquire new
 knowledge if learning occurs in a specific context and is embedded in a physical
 environment.  Thanks to AR, it allows users to be completely immersed inside a
-synthetic environment, which makes learning more effectiv
+synthetic environment, which makes learning more effective
 \cite{situated-learning}.  Since AR permits to create interaction experiences
 that are enhanced by the overlapping of information between virtual and real
-objects, it improves the involvement of kids during their learning proces
+objects, it improves the involvement of kids during their learning process
 \cite{AR-support-geometry}.
 
 In 1999, van Hiele proposed a theory named “Levels of Geometric Thinking”, which
@@ -61,7 +61,7 @@ level.
 
 \section{Problem Statement and Related Work}
 
-\subsection{Probelm Statement}
+\subsection{Problem Statement}
 
 Due to the reason that geometry plays an essential role in math but is too
 abstract for kids to learn, a new method which helps kids to build a connection
@@ -114,36 +114,49 @@ appendix \ref{appendix:interview}.
 
 \section{Prototyping}
 
-We first used wireframe prototype via Miro. Describe the process via which users
-will interact with our application.  In doing so we focus more on breadth of the
-features we covered rather than depth; we aim to show the majority of the
-features involved in our applicaiton, but our prototype will not impliment any
-real functionality. Our initial prototype can be found in appendix \ref{appendix:prototype}.
+Our first version of prototype is using storyboards made via Miro for the
+interface design (appendix \ref{appendix:prototype}). The detailed procedures
+are explained as following: at the beginning, parents are required to register
+and help their kids to login the app. This aims to help us track kids’
+progresses and watching their learning behavior. Second, the screen shows
+several different levels and kids can go to next level after they complete their
+current level. This design is inspired by many kids’ games, which gives them
+more control and encourage them challenge harder level. After choosing a level,
+users will select either ``Learn the Basics,'' ``Real World Match,'' or ``Exploring
+Some Math!'' This design is consistent with Van Hiele (1999)’s hierarchical
+theory of geometry thinking, from “lowest” to “highest”: visual level, the
+descriptive level and the deduction level. Only level two (“Real World Match”)
+implement AR, which let users learn geometry shapes by explore their
+environment. The first level, “Learn the Basics”, uses simply let the user
+visually learn a geometric concept using the 2D environment. The third level,
+“Exploring Some Math,” let kids learn geometric shapes from visual and
+description to the deduction learning, combines conceptual content (definitions
+and characteristics) with procedural content (applying formulae and
+calculus). We also designed to put some pop-up quizzes to evaluate their
+performance.
 
-\section{Implimentation}
+We focus more on breadth of the features we covered rather than depth; we aim to
+show the majority of the features involved in our application, but our prototype
+will not implement any real functionality.
 
-We consider the spatial relationship between items on the page and structure the
-page according to importance. We carefully place the items which helps kides
-draw attention to the most important information,(the geometry shapes and
-equations) and aids in scanning and readability.
 
-To improve the prior work and design, we plan to use color and texture
-strategically. We use color, light, contrast, and texture to focus or shift
-users attention to the project. The different sizes, fonts, and arrangement of
-text help improve scannability, legibility, and readability to ensure that the
-system communicates and always notify users of location, operation, status
-changes or errors when they pass along the tasks.
+\section{Implementation}
 
-In conclusion, we use various UI elements to communicate status and subsequent
-steps when necessary can reduce user frustration.
-
-We are going to use matlab to refine the coding that prior team have done, and
-also we will develop the application to improve user experience in terms of
-accessibility, readability, entertainment value.
+We will continue work on the IOS app that the previous Real-World Geometry team
+developed. Therefore we will continue utilizing the Swift programming language
+for front-end development and ARKit 2 for AR implementation. In a addition to
+original Real-World Geometry app's features, we plan on adding functionality for
+users to perform mathematical calculations on the geometric shapes they
+identify.
 
 One challenge we may face is the need to balance our goal of adding new and
 interesting features to the existed application with our desire to maintain a
-simple simple and easy to interface for our users.
+simple and easy to use interface for our users. We will address this by ensuring
+that we always prioritize user experience as we add to features.
+
+A schematic of our solution can be found in our prototype storyboard in appendix
+\ref{appendix:prototype}. This describes the steps the user will be taken
+through as they interact with our application.
 
 We are building a mobile app, and are currently targeting only
 iPhones. Hopefully will eventually be able to expand to android phones as
@@ -175,7 +188,7 @@ significant difference between them. We will ask the students assigned to
 condition 2 to take a brief survey, to get a better understanding of their
 experience using our application.
 
-\section{Alterative Approaches}
+\section{Alternative Approaches}
 
 We planned to use ARKit 2 and paired it with Unity, however, it also has
 downsides, e.g. only supporting macOS and iOS systems. We prepared some backup
@@ -212,6 +225,7 @@ Linux, Android or Windows.
   \begin{description}
     \item[Field of Study] Computer Science
     \item[Role] Developer, Coding, Project Manager
+    \item[Interests] Software Development, Network Security
   \end{description}
 \item[Connor Onweller] \hfill
   \begin{description}
@@ -254,7 +268,7 @@ Linux, Android or Windows.
       \item Do you ever use resources like videos, websites, or games to help
         teach? If so, do you ever use any of these to help teach geometry?
       \item Could you see a geometry phone game as something that could be a
-        helpful supplimentary tool for teaching?
+        helpful supplementary tool for teaching?
       \item What topics would you think such a game should cover?
       \item How do you best communicate instructions for students to complete
         activities, assignments, and games? What types of considerations should
